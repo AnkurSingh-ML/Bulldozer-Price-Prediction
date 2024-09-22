@@ -18,15 +18,14 @@ The competition uses **RMSLE** (Root Mean Squared Logarithmic Error) as the eval
     - Encoding categorical data
     - Feature scaling
 2. **Model Selection**:
-    - We will try different regression models like RandomForest, XGBoost, and Gradient Boosting to predict the sale prices.
+    - I have used RandomForest to predict the sale prices.
 3. **Model Evaluation**:
     - Use cross-validation on the training set to assess the performance of different models.
     - Compare model results based on RMSLE score.
 
 ## 5. Technologies Used
-- **Python**: For building the predictive models
 - **Pandas & NumPy**: For data manipulation and preprocessing
-- **Matplotlib & Seaborn**: For data visualization
+- **Matplotlib**: For data visualization
 - **Scikit-Learn**: For model building and evaluation
 
 ## 6. Setup Instructions
