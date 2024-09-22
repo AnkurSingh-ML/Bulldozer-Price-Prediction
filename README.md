@@ -1,14 +1,37 @@
-# Bulldozer-Price-Prediction
+# Bulldozer Price Prediction
 
-##1. Problem definition
-Predict the sale price of a particular piece of heavy equiment at auction based on it's usage, equipment type, and configuaration. The data is sourced from auction result postings and includes information on usage and equipment configurations.
+## 1. Problem Definition
+The goal of this project is to predict the sale price of a particular piece of heavy equipment at auction based on its usage, equipment type, and configuration. The dataset is sourced from auction result postings and includes detailed information about equipment usage and configurations.
 
-##2. Data
-The data for this competition is split into three parts:
+## 2. Data
+The dataset is split into three parts:
+- **Train.csv**: The training set, which contains data up to the end of 2011.
+- **Valid.csv**: The validation set, containing data from January 1, 2012, to April 30, 2012. This set is used throughout most of the competition to test predictions and update the public leaderboard.
+- **Test.csv**: The test set, containing data from May 1, 2012, to November 2012. This data is released in the final week of the competition, and predictions on this set determine the final ranking.
 
-Train.csv is the training set, which contains data through the end of 2011.
-Valid.csv is the validation set, which contains data from January 1, 2012 - April 30, 2012 You make predictions on this set throughout the majority of the competition. Your score on this set is used to create the public leaderboard.
-Test.csv is the test set, which won't be released until the last week of the competition. It contains data from May 1, 2012 - November 2012. Your score on the test set determines your final rank for the competition.
+## 3. Evaluation
+The competition uses **RMSLE** (Root Mean Squared Logarithmic Error) as the evaluation metric, which measures the error between the actual and predicted auction prices. Lower RMSLE values indicate better model performance.
 
-##3. Evaluation
-*The evaluation metric for this competition is the RMSLE (root mean squared log error) between the actual and predicted auction prices.
+## 4. Model Approach
+1. **Data Preprocessing**:
+    - Handling missing values
+    - Encoding categorical data
+    - Feature scaling
+2. **Model Selection**:
+    - We will try different regression models like RandomForest, XGBoost, and Gradient Boosting to predict the sale prices.
+3. **Model Evaluation**:
+    - Use cross-validation on the training set to assess the performance of different models.
+    - Compare model results based on RMSLE score.
+
+## 5. Technologies Used
+- **Python**: For building the predictive models
+- **Pandas & NumPy**: For data manipulation and preprocessing
+- **Matplotlib & Seaborn**: For data visualization
+- **Scikit-Learn**: For model building and evaluation
+- **XGBoost**: For advanced tree-based modeling
+
+## 6. Setup Instructions
+To run the project locally:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/bulldozer-price-prediction.git
