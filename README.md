@@ -28,7 +28,6 @@ The competition uses **RMSLE** (Root Mean Squared Logarithmic Error) as the eval
 - **Pandas & NumPy**: For data manipulation and preprocessing
 - **Matplotlib & Seaborn**: For data visualization
 - **Scikit-Learn**: For model building and evaluation
-- **XGBoost**: For advanced tree-based modeling
 
 ## 6. Setup Instructions
 To run the project locally:
