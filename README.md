@@ -33,4 +33,4 @@ The competition uses **RMSLE** (Root Mean Squared Logarithmic Error) as the eval
 To run the project locally:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/bulldozer-price-prediction.git
+   git clone https://github.com/AnkurSingh-ML/Bulldozer-Price-Prediction.git
